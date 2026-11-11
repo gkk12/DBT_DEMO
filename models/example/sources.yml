@@ -6,3 +6,8 @@ sources:
     schema: DEMO_SCHEMA
     tables:
       - name: WEATHER
+  - name: another_demo
+    database: STAGE_DB
+    schema: STAGE_SCHEMA
+    tables:
+      - name: BIKE
