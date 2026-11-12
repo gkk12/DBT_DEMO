@@ -7,7 +7,7 @@ sources:
     tables:
       - name: WEATHER
   - name: another_demo
-    database: STAGE_DB
+    database: DEMO_DB
     schema: STAGE_SCHEMA
     tables:
       - name: BIKE
