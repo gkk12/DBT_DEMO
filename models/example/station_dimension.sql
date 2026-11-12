@@ -1,0 +1,14 @@
+WITH BIKE AS 
+(
+    select 
+    start_station_id,
+    start_station_name,
+    start_lat,
+    start_lng
+    from 
+    {{ source('another_demo', 'BIKE') }}
+    where ride_id != 'ride_id'
+)
+
+select *
+from BIKE
