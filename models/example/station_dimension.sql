@@ -7,8 +7,7 @@ WITH BIKE AS
     start_lat,
     start_lng
     from 
-    {{ source('another_demo', 'BIKE') }}
-    where ride_id != 'ride_id'
+    {{ ref('stage_bike') }}
 )
 
 select *

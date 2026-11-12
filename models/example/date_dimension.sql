@@ -10,8 +10,7 @@ MONTH(TO_TIMESTAMP(STARTED_AT)) as MONTH_STARTED_AT,
 as STATION_OF_THE_YEAR,
 {{function_example1('STARTED_AT')}} as WHAT_POINT
 from 
-{{ source('another_demo', 'BIKE') }}
-where STARTED_AT != 'started_at'
+{{ ref('stage_bike') }}
 )
 
 select * from CTE
